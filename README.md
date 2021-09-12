@@ -1,11 +1,12 @@
 # API for DynamoDB CRUD operations
 
 
+```
  Project Structure
   ├── main.go # All implementation
   ├── go.mod
   └── go,sum
-
+```
 
 ## Get all dependencies
 ```
@@ -18,7 +19,7 @@ go get github.com/aws/aws-lambda-go
 set GOOS=linux
 go build -o main main.go
 ```
-
+### powershell
 ```powershell
 $env:GOOS = "linux"
 $env:CGO_ENABLED = "0"
@@ -36,7 +37,7 @@ go.exe get -u github.com/aws/aws-lambda-go/cmd/build-lambda-zip
 ``` cmd
 %USERPROFILE%\Go\bin\build-lambda-zip.exe -output main.zip main
 ```
-
+### powershell
 ``` powershell
 ~\Go\Bin\build-lambda-zip.exe -output main.zip main
 ```
